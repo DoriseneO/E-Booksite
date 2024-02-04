@@ -5,6 +5,10 @@ import React from "react";
 
 const Art = () => {
   // const { allProduct } = useContext(ProductContext);
-  return <div className="bg-blue-400 h-[50px] w-full">i am art</div>;
+  return (
+    <div className="bg-blue-400 h-[50px] w-full">
+      i am under construction,dont judge me.
+    </div>
+  );
 };
 export default Art;

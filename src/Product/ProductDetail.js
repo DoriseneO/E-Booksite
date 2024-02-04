@@ -31,6 +31,10 @@ function ProductDetail() {
             <p>{items.details}</p>
             <br />
             <div className="flex justify-between align-center">
+              <div>
+                {" "}
+                <p>{items.price}</p>
+              </div>{" "}
               <button
                 // onClick={() => {
                 //   addTocart(items.title);

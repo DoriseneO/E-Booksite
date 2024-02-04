@@ -5,9 +5,9 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background-image: url(../src/Assests/background-destination-desktop.jpg);
+  /* background-image: url(../src/Assests/background-destination-desktop.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-image: fixed;
+  background-size: cover; */
+  /* background-image: fixed; */
   /* background-color: rgb(255, 0, 174); */
 }

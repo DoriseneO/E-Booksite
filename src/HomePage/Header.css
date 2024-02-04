@@ -14,7 +14,7 @@
 }
 
 .nav-con {
-  width: 20%;
+  width: 25%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,7 +45,7 @@ a:hover {
 
 @media screen and (max-width: 700px) {
   .header {
-    height: 100px;
+    height: 80px;
     width: 100%;
   }
 
@@ -54,7 +54,7 @@ a:hover {
   }
 
   .nav-con {
-    width: 100%;
+    width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,12 +76,12 @@ a:hover {
     transition: transform 0.3s ease-in-out;
     position: absolute;
     justify-content: center;
-    top: 100px;
+    top: 80px;
     right: 0;
     z-index: 1;
     align-items: center;
     color: whitesmoke;
-    background-color: rgb(10, 10, 10);
+    background: #0d0d0d;
     height: 100%;
     width: 60%;
   }

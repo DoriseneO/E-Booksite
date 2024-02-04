@@ -1,7 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
-import Footer from "./Footer";
 
 const Home = () => {
   return (
@@ -9,7 +8,6 @@ const Home = () => {
       <Header />
       <Outlet />
       <br />
-      <Footer />
     </div>
   );
 };

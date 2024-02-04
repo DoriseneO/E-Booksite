@@ -11,7 +11,7 @@ import ProductContextProvider from "./ProdContext/ProductContext";
 function App() {
   return (
     <ProductContextProvider>
-      <div className="App">
+      <div className="App ">
         <Routes>
           <Route path="/" element={<Home />}>
             {/* <Route index path="/movies" element={<Movies />} /> */}

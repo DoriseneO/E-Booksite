@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { MdOutlineStarBorder } from "react-icons/md";
+
 import { MdStar } from "react-icons/md";
 export default function Rating() {
   const [rating, setRating] = useState("");
@@ -11,7 +12,7 @@ export default function Rating() {
     <div>
       <button onClick={handleRating}>
         {rating ? (
-          <div className="text-yellow-300">
+          <div className="text-yellow-600">
             <MdStar />
           </div>
         ) : (

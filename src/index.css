@@ -2,16 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
+body {
+  min-height: 100vh; /* Use min-height to cover the entire viewport height */
+  background-image: url(../src/Assests/background-destination-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: blue; */
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-} */
