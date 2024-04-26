@@ -4,7 +4,7 @@ import Header from "./Header";
 
 const Home = () => {
   return (
-    <div className="w-[100%] h-[100%] flex-column justify-center align-center">
+    <div className="w-full">
       <Header />
       <Outlet />
       <br />

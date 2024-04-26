@@ -2,10 +2,13 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
-// import risidiologo from "../Assests/risidiologo.png";
+import { useContext } from "react";
+import { ProductContext } from "../ProdContext/ProductContext.js";
 import "./Header.css";
+import Search from "../Pages/Search";
 
 const Header = () => {
+  const { handleSearch, search } = useContext(ProductContext);
   const [menu, setMenu] = useState(true);
 
   const handle = () => {
@@ -18,6 +21,7 @@ const Header = () => {
         <div className="header__left">
           <h1>IAMDORIS</h1>
         </div>
+        <Search handleSearch={handleSearch} search={search} />
         <div className="nav-con">
           <div className="nav">
             <div onClick={handle} className="md:hidden ">
@@ -34,9 +38,8 @@ const Header = () => {
                 </Link>{" "}
               </li> */}
               <li>
-                {" "}
                 <Link to="/" onClick={() => setMenu(!menu)}>
-                  BOOKS
+                  ALL_PRODUCT
                 </Link>{" "}
               </li>{" "}
               <li>

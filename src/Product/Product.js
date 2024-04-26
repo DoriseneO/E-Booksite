@@ -25,24 +25,25 @@ const Product = ({ productsToRender }) => {
                 </Link>
               </div>
               <div className="product_section">
-                <div className="poduct_caption">
-                  <span className="flex justify-between">
-                    {" "}
-                    <h1>{book.title}</h1>
-                    <h1>£{book.price}</h1>
-                  </span>
-                  <p>{book.brand}</p>
+                <div className="product-caption">
+                  <h1>{book.title}</h1>
+                  <h1>£{book.price}</h1>
                 </div>
-                <div className="flex justify-between w-full">
+                <div className="product-caption">
+                  <p>{book.brand}</p>
+                  <div>{book.rating}</div>{" "}
+                </div>
+
+                <div className="product-caption">
                   <div className="flex">
                     <Rating />
                     <Rating />
                     <Rating />
                   </div>
-                  <div>{book.rating}</div>
-                </div>
-                <div className="add-to-cart-btn justify-center">
-                  <button>add to cart</button>
+
+                  <div className="add-to-cart-btn justify-center">
+                    <button>add to cart</button>
+                  </div>
                 </div>
               </div>
             </div>

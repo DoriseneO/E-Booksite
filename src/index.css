@@ -3,11 +3,5 @@
 @tailwind utilities;
 
 body {
-  width: 100%;
-  min-height: 100vh; /* Use min-height to cover the entire viewport height */
-  background-image: url(../src/Assests/background-destination-desktop.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* background-color: blue; */
   margin: 0;
 }

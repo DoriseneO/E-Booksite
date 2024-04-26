@@ -1,16 +1,20 @@
 import React from "react";
 import Product from "../Product/Product.js";
-import Search from "./Search.js";
+// import "./TopNav.css";
 import { useContext } from "react";
 import { ProductContext } from "../ProdContext/ProductContext.js";
+import SideNav from "./SideNav/SideNav.js";
+import TopNav from "./topNav/TopNav.js";
 const Books = () => {
-  const { handleSearch, search, productsToRender } = useContext(ProductContext);
+  const { productsToRender } = useContext(ProductContext);
 
   return (
-    <div className=" bg-green w-[100%] h-[100%] flex-row justify-center align-center bg-green">
-      <Search handleSearch={handleSearch} search={search} />
-      <Product productsToRender={productsToRender} />
-      {/* <Product productsToRender={productsToRender} /> */}
+    <div className="all-nav">
+      <TopNav />
+      <div className="w-[90%] flex justify-center">
+        <SideNav />
+        <Product productsToRender={productsToRender} />
+      </div>
     </div>
   );
 };

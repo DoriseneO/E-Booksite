@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import ProductContext from "../ProdContext/ProductContext";
-import All_Product from "../Component/BookData";
+
 const Cart = () => {
-  const { cartItems } = useContext(ProductContext);
+  const { cartItems, product } = useContext(ProductContext);
   console.log(cartItems);
   return (
     <div className="text-white">
@@ -15,7 +15,7 @@ const Cart = () => {
           <p>Remove</p>
         </div>
         <hr />
-        {All_Product.map((book) => {
+        {product.map((book) => {
           if (cartItems[book.title] !== 0) {
             return (
               <div>

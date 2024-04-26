@@ -16,7 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: whitesmoke;
+  color: black;
 }
 .displayed_image {
   width: 90%;
